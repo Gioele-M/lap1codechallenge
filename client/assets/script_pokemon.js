@@ -1,18 +1,16 @@
-//Target elements in pokemon.html
-const pokeName = document.querySelector('h1')
-const pokeName2 = document.querySelector('.pokeName')
-const pokeNum = document.querySelector('.pokeNum')
+    //Target elements in pokemon.html
+    const pokeName = document.querySelector('h1')
+    const pokeName2 = document.querySelector('.pokeName')
+    const pokeNum = document.querySelector('.pokeNum')
 
-const pokeImage = document.querySelector('img') //Change this!!
+    const pokeImage = document.querySelector('img') //Change this!!
 
-const pokeType = document.querySelector('.typeInput')
-const pokeAbility = document.querySelector('.abilityInput')
-const pokeEvolution = document.querySelector('.evolutionInput')
+    const pokeType = document.querySelector('.typeInput')
+    const pokeAbility = document.querySelector('.abilityInput')
+    const pokeEvolution = document.querySelector('.evolutionInput')
 
-const previewInfo = document.querySelector('.previewInfo')
-const bioInfo = document.querySelector('.bioInfo')
-
-
+    const previewInfo = document.querySelector('.previewInfo')
+    const bioInfo = document.querySelector('.bioInfo')
 
 async function getPokemon(pokemonName){
     try{
@@ -40,10 +38,16 @@ async function getPokemon(pokemonName){
 
     }catch(err){
         console.log('The pokemon you searched for does not exist '+ err.message)
-        pokeName.textContent = 'Try searching another starter'
+        // pokeName.textContent = 'Try searching another starter'
     }
 }
 
 
+let searchItem = localStorage.getItem('pokemon')
+localStorage.clear()
 
-module.exports = getPokemon
+console.log(searchItem)
+
+
+getPokemon(searchItem)
+

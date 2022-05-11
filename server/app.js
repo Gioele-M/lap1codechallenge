@@ -3,6 +3,15 @@ const app = express()
 const cors = require('cors')
 const pokemon = require('./data')
 
+function getRandomPoke(){
+    return pokemon[Math.round(Math.random() * pokemon.length)]
+}
+
+function getPokemon(addressName){
+    return pokemon.find(element => element.address === addressName)
+}
+
+
 //Interact with external sources
 app.use(cors())
 //Interacting w forms 
@@ -15,10 +24,6 @@ app.get('/', (req,res)=>{
 app.get('/pokemon', (req,res)=>{
     res.send(pokemon)
 })
-
-function getPokemon(addressName){
-    return pokemon.find(element => element.address === addressName)
-}
 
 app.get('/pokemon/:address', (req, res)=>{
     try{
@@ -36,13 +41,8 @@ app.get('/pokemon/:address', (req, res)=>{
     }
 })
 
-function getRandomPoke(){
-    return pokemon[Math.round(Math.random() * pokemon.length)]
-}
-
 app.get('/random', (req, res)=>{
     res.send(getRandomPoke())
 })
-
 
 module.exports = app

@@ -44,8 +44,7 @@ async function getPokemon(pokemonName){
         bioInfo.textContent = data.biology
 
     }catch(err){
-        console.log('The pokemon you searched for does not exist '+ err.message)
-        // pokeName.textContent = 'Try searching another starter'
+        console.log('Something went wrong '+ err.message)
     }
 }
 

@@ -27,7 +27,8 @@ body{
     display: flex;
     flex-direction: row;
     max-width: 60%;
-    margin: 3px 50px;
+    margin: 3px auto;
+    
 }
 
 .btn{
@@ -41,7 +42,8 @@ body{
 }
 
 .logo-img{
-    max-width:60%;
+    max-width: 50%;
+    margin-top: 175px;
 }
 
 

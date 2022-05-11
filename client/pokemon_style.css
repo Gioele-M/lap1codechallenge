@@ -10,60 +10,60 @@
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
-  }
-  
-  .grid-container > div {
+}
+
+.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-  }
-  
-  .item1 {
+}
+
+.item1 {
     grid-column-start: 1;
     grid-column-end: 3;
-  }
-  .item2 {
+}
+.item2 {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
     width: 25vw;
-  }
-  .item3 {
-   grid-column-start: 1;
-   grid-column-end: 3;
-  }
-  .item4 {
-   grid-column-start: 1;
-   grid-column-end: 3;
-  }
+}
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
-  .pokeName,
-  .pokeNum {
-      display: inline;
-      background-color: lightgray;
-      border-radius: 10px;
-      padding: 5px 15px;
-  }
+.pokeName,
+.pokeNum {
+    display: inline;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
 
-  .pokeImg {
-      background-color: lightgray;
-      border-radius: 10px;
-      width: 20vw;
-      margin: 2vh auto;
-  }
+.pokeImg {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 20vw;
+    margin: 2vh auto;
+}
 
-  .type1,
-  .type2,
-  .abilities,
-  .evolution {
-      display: inline;
-      background-color: lightgray;
-      border-radius: 10px;
-      padding: 5px 15px;
-     
-  }
+.type1,
+.type2,
+.abilityInfo,
+.evolutionInfo {
+    display: inline;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px 15px;
+    
+}
 
 .poke_card {
     background-color: #fff;

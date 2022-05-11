@@ -24,5 +24,10 @@
 
 ### If we have time
 
+!!! - Add favicon
+
+
 - Testing 
 - Play w google API(?)
+
+

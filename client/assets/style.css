@@ -1,0 +1,51 @@
+html{
+	box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*, *::before, ::after{
+	padding:0;
+	margin:0;
+	box-sizing: inherit;
+}
+
+.general-container{
+    max-width: 95%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    margin: 3px 50px;
+}
+
+.btn{
+    margin: 0px 20px;
+    background-color: gray;
+    color:white;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+.logo-img{
+    max-width:60%;
+}
+
+
+#searchbar {
+    height: 25px;
+    width: 300px;
+}

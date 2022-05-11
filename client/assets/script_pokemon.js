@@ -45,4 +45,5 @@ async function getPokemon(pokemonName){
 }
 
 
-console.log(getPokemon('treecko'))
+
+module.exports = getPokemon

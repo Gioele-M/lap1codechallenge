@@ -2,20 +2,6 @@
 
 
 
-
-
-- Backend first
-
-
-- Front end
-- connect the two
-
-
-
-
-
-
-
 - Homepage
 - Results page
 - Standard page 

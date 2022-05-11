@@ -14,7 +14,14 @@
 
 async function getPokemon(pokemonName){
     try{
-        const response = await fetch(`http://localhost:3000/pokemon/${pokemonName}`)
+        let api_url = 'http://localhost:3000/'
+        if(pokemonName === 'random'){
+            api_url += 'random'
+        }else{
+            api_url += 'pokemon/' + pokemonName
+        }
+
+        const response = await fetch(api_url)
         const data = await response.json()
         console.log(data)
 

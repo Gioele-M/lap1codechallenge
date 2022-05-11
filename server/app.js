@@ -18,11 +18,11 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (req,res)=>{
-    res.send('Hello from layla and gio')
+    res.status(200).send('Hello from Layla and Gio')
 })
 
 app.get('/pokemon', (req,res)=>{
-    res.send(pokemon)
+    res.status(200).send(pokemon)
 })
 
 app.get('/pokemon/:address', (req, res)=>{
@@ -42,7 +42,7 @@ app.get('/pokemon/:address', (req, res)=>{
 })
 
 app.get('/random', (req, res)=>{
-    res.send(getRandomPoke())
+    res.status(200).send(getRandomPoke())
 })
 
 module.exports = app

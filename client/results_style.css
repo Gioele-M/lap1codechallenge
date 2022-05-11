@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #DFDFDF;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  
+    margin: 10px;
+    
+}
+
+.flex-container > div {
+    background-color: #FFCC00;
+    width: inherit;
+    margin: 20px;
+    position: relative;
+    border-radius: 15px;
+    
+}
+ul {
+    list-style-type: none;
+    width: 80%;
+    font-size: 16px;
+    padding: 14px;
+    color: #0075BE;
+}
+img {
+    position: absolute;
+    right: 5vw;
+    bottom: 0;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    height: 100px;
+    
+}
+
+h1{
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pokeResultName{
+    font-size: 32px;
+    color: #0A285F;
+}

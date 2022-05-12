@@ -10,16 +10,16 @@ window.addEventListener('DOMContentLoaded', () => {
     searchBtn.addEventListener('click', ()=>{
         let searchedValue = searchBar.value
         localStorage.setItem('pokemon', searchedValue)
-        window.open('http://127.0.0.1:5501/client/pokemon.html')
+        window.open('./pokemon.html')
     })
 
     showAllBtn.addEventListener('click', ()=>{
-        window.open('http://127.0.0.1:5501/client/results_page.html')
+        window.open('./results_page.html')
     })
 
     randomBtn.addEventListener('click', ()=>{
         localStorage.setItem('pokemon', 'random')
-        window.open('http://127.0.0.1:5501/client/pokemon.html')
+        window.open('./pokemon.html')
     })
 
 

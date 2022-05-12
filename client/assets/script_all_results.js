@@ -40,7 +40,7 @@ function createSection(data){
     link.addEventListener('click', ()=>{
         let searchedValue = link.textContent.toLowerCase()
         localStorage.setItem('pokemon', searchedValue)
-        window.open('http://127.0.0.1:5501/client/pokemon.html')
+        window.open('./pokemon.html')
     })
 
 }

@@ -6,6 +6,7 @@ In order to use PokèSearch you will need to:
 - Move to the directory lap1codechallenge
 - Install all dependencies with `npm i`
 - Run the server with `npm run start`
+    - The server will start in port 3000 by default
 - Now you can open the search page! You can either: 
     - Move into the client folder and open a live server from index.html
     - You can directly right-click index.html and choose to open it with your favourite web browser!

@@ -8,31 +8,62 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="shortcut icon" href="./assets/images/pokle_fav.png" type="image/x-icon">
     <script defer src="./assets/script.js"></script>
-
-    
 </head>
 <body>
-    <div class="general-container">
-        <img src="./assets/images/pokle_logo.png" alt="website logo" class="logo-img">
-        <div class="btns-container">
-            <form>
-                <label for="searchbar">
-                    <input type="text" id="searchbar">
-                </label>
-                <label for="search-btn">
-                    <input type="submit" value="search" id="search-btn" class="btn">
-                </label>
-            </form>
+    <header>
+        <div class="mainContainer">
+            <div class="leftLinks">
+                <a href="">About</a>
+                <a href="">Store</a>
+            </div>
+            <div class="rightSide">
+                <div class="rightLinks">
+                    <a class="gmail" href="">Gmail</a>
+                    <a class="images" href="">Images</a>
+                    <img class="dot" src="./assets/images/dot.png" alt="">
+                    <img class="redIcon" src="./assets/images/redIcon.png" alt="">
+                </div>
+            </div>
+            
         </div>
-        <div id="btns2" class="btns-container">    
+    </header>
+    <div class="logoSection">
+        <img class="logo" src="https://cdn.vox-cdn.com/thumbor/p01ezbiuDHgRFQ-htBCd7QxaYxo=/0x105:2012x1237/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="">
+    </div>
+    <div class="searchArea">
+        <div class="searchSection">
+            <div>
+                <img class="searchIcon" src="./assets/images/searchIcon.png" alt="">
+            </div>
+            <div class="barDiv">
+                <form>
+                    <label for="searchbar">
+                        <input type="text" id="searchbar">
+                    </label>
+                </form>
+            </div>
+            <div>
+                <img class="micIcon" src="./assets/images/micIcon.png" alt="">
+            </div>
+        </div>    
+        <div flex>
+            <div class="buttons">
+                <form>
+                    <label for="search-btn">
+                        <input type="submit" value="search" id="search-btn" class="btn">
+                    </label>
+                </form>
+                <form>
+                    <label for="btn-random">
+                        <input type="button" value="show random" id="btn-random" class="btn">
+                    </label>
+                </form>
+            </div>
+        </div>    
+        <div class="buttons2">
             <form>
                 <label for="find-all">
                     <input type="button" value="show all" id="btn-showall" class="btn">
-                </label>
-            </form>
-            <form>
-                <label for="btn-random">
-                    <input type="button" value="show random" id="btn-random" class="btn">
                 </label>
             </form>
         </div>

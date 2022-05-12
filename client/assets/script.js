@@ -9,8 +9,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     searchBtn.addEventListener('click', ()=>{
         let searchedValue = searchBar.value
+        if(localStorage.getItem('pokemon')){
+            localStorage.clear()
+        }
         localStorage.setItem('pokemon', searchedValue)
         window.open('./pokemon.html')
+    })
+
+    searchBar.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter'){
+            e.preventDefault()
+        }
     })
 
     showAllBtn.addEventListener('click', ()=>{
@@ -18,10 +27,13 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     randomBtn.addEventListener('click', ()=>{
+        if(localStorage.getItem('pokemon')){
+            localStorage.clear()
+        }
         localStorage.setItem('pokemon', 'random')
         window.open('./pokemon.html')
     })
-
+    
 
 
 })

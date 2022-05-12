@@ -39,6 +39,9 @@ function createSection(data){
     //Add event listener to anchor
     link.addEventListener('click', ()=>{
         let searchedValue = link.textContent.toLowerCase()
+        if(localStorage.getItem('pokemon')){
+            localStorage.clear()
+        }
         localStorage.setItem('pokemon', searchedValue)
         window.open('./pokemon.html')
     })

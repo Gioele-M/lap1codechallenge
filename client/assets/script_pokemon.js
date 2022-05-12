@@ -52,11 +52,6 @@ async function getPokemon(pokemonName){
 
 
 let searchItem = localStorage.getItem('pokemon')
-localStorage.clear()
 
 
 getPokemon(searchItem)
-
-window.onbeforeunload = ()=>{
-    return 'Please do not refresh'
-}

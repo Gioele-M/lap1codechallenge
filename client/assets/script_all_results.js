@@ -49,11 +49,8 @@ async function getAllPokemon(){
     try{
         const response = await fetch('http://localhost:3000/pokemon/')
         const data = await response.json()
-        console.log(data)
-
         data.forEach(e => createSection(e))
         
-
     }catch(err){
         console.log('Something went wrong '+ err.message)
     }

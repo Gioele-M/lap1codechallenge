@@ -1,9 +1,11 @@
     //Target elements in pokemon.html
+    const title = document.querySelector('title')
+
     const pokeName = document.querySelector('h1')
     const pokeName2 = document.querySelector('.pokeName')
     const pokeNum = document.querySelector('.pokeNum')
 
-    const pokeImage = document.querySelector('img') //Change this!!
+    const pokeImage = document.querySelector('img') 
 
     const pokeType = document.querySelector('.typeInput')
     const pokeAbility = document.querySelector('.abilityInput')
@@ -23,12 +25,12 @@ async function getPokemon(pokemonName){
 
         const response = await fetch(api_url)
         const data = await response.json()
-        console.log(data)
 
         if(data.message === 'This pokemon does not exist'){
             throw new Error('This pokemon does not exist')
         }
         
+        title.textContent = data.pokename
         pokeName.textContent = data.pokename
         pokeName2.textContent = data.pokename
         pokeNum.textContent = data.pokedexnumber
@@ -52,8 +54,9 @@ async function getPokemon(pokemonName){
 let searchItem = localStorage.getItem('pokemon')
 localStorage.clear()
 
-console.log(searchItem)
-
 
 getPokemon(searchItem)
 
+window.onbeforeunload = ()=>{
+    return 'Please do not refresh'
+}

@@ -1,53 +1,19 @@
-# lap1codechallenge
-
-
-
-- Homepage
-- Results page
-- Standard page 
-
-
-
-
-
-
-### If we have time
-
-For Layla
-!!! - Add favicon
-!!! - Add logo
-
-
-For Gio
-!!! -result page
-!!! -download and link all images
-!!! -readme!!!
-
-!!!!!!!!!!!!!! no need for nodemon or watchify!!!! or Jest or Supertest :(
-
-readme = {
-
-# PokèSearch
+# Pokle - The Pokémon Search
+Pokle is a search engine for all your favourite Pokémon (actually starters gen 1 to 3)
 
 In order to use PokèSearch you will need to: 
 - Clone this repository locally
 - Move to the directory lap1codechallenge
 - Install all dependencies with `npm i`
 - Run the server with `npm run start`
-- Now you can open a port starting 
+- Now you can open the search page! You can either: 
     - Move into the client folder and open a live server from index.html
-    - If you prefer you can directly right-click the file and choose to open it with your favourite web browser!
+    - You can directly right-click index.html and choose to open it with your favourite web browser!
 
 
+## For experts
+- If you want to add pokemon locally make sure to run `npm run dev` for your API to refresh automatically
+- If you want to help us creating a test suite make sure to install the dev dependencies as the environment was already created!
 
-}
-
-
-
-
-
-
-- Testing 
-- Play w google API(?)
-
-
+## Future improvements 
+- Testing suite

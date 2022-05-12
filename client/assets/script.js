@@ -7,11 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const randomBtn = document.querySelector('#btn-random')
 
 
-    console.log(searchBtn)
-
     searchBtn.addEventListener('click', ()=>{
         let searchedValue = searchBar.value
-        console.log('searched value' +  searchedValue)
         localStorage.setItem('pokemon', searchedValue)
         window.open('http://127.0.0.1:5501/client/pokemon.html')
     })

@@ -7,8 +7,7 @@
     "dev": "nodemon ./server/index.js",
     "start": "node ./server/index.js",
     "test": "jest --watchAll",
-    "coverage": "jest --coverage",
-    "bundler": "watchify  client/assets/script.js -o bundle.js"
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -28,7 +27,6 @@
     "concurrently": "^7.1.0",
     "jest": "^28.1.0",
     "nodemon": "^2.0.16",
-    "supertest": "^6.2.3",
-    "watchify": "^4.0.0"
+    "supertest": "^6.2.3"
   }
 }

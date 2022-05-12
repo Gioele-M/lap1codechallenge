@@ -7,6 +7,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const randomBtn = document.querySelector('#btn-random')
 
 
+    searchBar.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter'){
+            e.preventDefault()
+            searchBtn.click()
+        }
+    })
+
     searchBtn.addEventListener('click', ()=>{
         let searchedValue = searchBar.value
         if(localStorage.getItem('pokemon')){
@@ -16,11 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
         window.open('./pokemon.html')
     })
 
-    searchBar.addEventListener('keydown', (e)=>{
-        if(e.key === 'Enter'){
-            e.preventDefault()
-        }
-    })
 
     showAllBtn.addEventListener('click', ()=>{
         window.open('./results_page.html')

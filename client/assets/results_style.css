@@ -1,51 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
+
 body {
-    background-color: #DFDFDF;
+    background-color: #f5f0f0;
 }
+
 .flex-container {
     display: flex;
     flex-direction: column;
-  
     margin: 10px;
-    
 }
 
 .flex-container > div {
-    background-color: #FFCC00;
+    background-color: #FFFFFF;
     width: inherit;
     margin: 20px;
     position: relative;
     border-radius: 15px;
-    
+    border: 8px solid #FB1B1B;
+    outline: 8px solid #000000;
 }
+
 ul {
     list-style-type: none;
-    width: 80%;
-    font-size: 16px;
+    width: 85%;
+    font-size: 14px;
     padding: 14px;
     color: #0075BE;
+    font-weight: 700;
 }
+
 img {
     position: absolute;
     right: 5vw;
     bottom: 0;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-top: 35px;
     height: 100px;
-    
 }
 
 h1{
-    font-size: 8vw;
+    font-size: 6vw;
     text-align: center;
     margin-bottom: 25px;
+    text-decoration: underline;
+    text-decoration-color: #FB1B1B;
 }
 
 .pokeResultName{
-    font-size: 32px;
+    font-size: 28px;
     color: #0A285F;
 }
+

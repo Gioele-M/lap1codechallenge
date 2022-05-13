@@ -67,14 +67,19 @@ app.get('/pokemon/:address', (req, res)=>{
 //-----
 
 //get pokemon by type
-// app.get('pokemon/type/:address', (req,res)=>{
-//     try{
-//         const type = req.params.address
-
-//     }catch{
-//         //
-//     }
-// })
+app.get('/pokemon/type/:address', (req, res)=>{
+    try{
+        const pokeType = req.params.address
+        console.log('Requested type ' + pokeType)
+        if(findPokemonByType(pokeType) == false){
+            throw new Error('We have no Pokemon with this type')
+        }else{
+            res.status(200).send(findPokemonByType(pokeType))
+        }
+    }catch(err){
+        res.status(404).send({message: err.message})
+    }
+})
 
 //----
 

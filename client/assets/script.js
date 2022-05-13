@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     searchBtn.addEventListener('click', ()=>{
-        let searchedValue = searchBar.value
+        let searchedValue = searchBar.value.toLowerCase()
         if(localStorage.getItem('pokemon')){
             localStorage.clear()
         }

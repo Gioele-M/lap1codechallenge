@@ -14,17 +14,26 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    searchBtn.addEventListener('click', ()=>{
-        let searchedValue = searchBar.value.toLowerCase()
-        if(localStorage.getItem('pokemon')){
-            localStorage.clear()
+    searchBtn.addEventListener('click', (e)=>{
+        e.preventDefault()
+        if(searchBar.value){
+            let searchedValue = searchBar.value.toLowerCase()
+            if(localStorage.getItem('pokemon')){
+                localStorage.clear()
+            }
+            localStorage.setItem('pokemon', searchedValue)
+            window.open('./pokemon.html')
+        }else{
+
         }
-        localStorage.setItem('pokemon', searchedValue)
-        window.open('./pokemon.html')
     })
 
 
     showAllBtn.addEventListener('click', ()=>{
+        if(localStorage.getItem('pokemon')){
+            localStorage.clear()
+        }
+        localStorage.setItem('pokemon', 'all')
         window.open('./results_page.html')
     })
 

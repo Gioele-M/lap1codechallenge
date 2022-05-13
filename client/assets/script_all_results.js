@@ -59,7 +59,11 @@ async function getAllPokemon(){
     }
 }
 
-getAllPokemon()
 
+let searchItem = localStorage.getItem('pokemon')
+
+if(searchItem === 'all'){
+    getAllPokemon()
+}
 
 

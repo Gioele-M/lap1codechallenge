@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const pokemon = require('./data')
+const { type } = require('express/lib/response')
 
 function getRandomPoke(){
     return pokemon[Math.round(Math.random() * pokemon.length)]
@@ -10,6 +11,26 @@ function getRandomPoke(){
 function getPokemon(addressName){
     return pokemon.find(element => element.address === addressName)
 }
+
+
+//-----
+
+function findPokemonByType(typeName){
+    let toReturn = []
+    pokemon.forEach(element => {
+        let types = element.type.toLowerCase().split(' ')
+        types.forEach(type=>{
+            if(type === typeName.toLowerCase()){
+                toReturn.push(element)
+            }
+        })
+    })
+    return toReturn
+}
+
+
+//------
+
 
 
 //Interact with external sources
@@ -41,6 +62,22 @@ app.get('/pokemon/:address', (req, res)=>{
         res.status(404).send({message: err.message})
     }
 })
+
+
+//-----
+
+//get pokemon by type
+// app.get('pokemon/type/:address', (req,res)=>{
+//     try{
+//         const type = req.params.address
+
+//     }catch{
+//         //
+//     }
+// })
+
+//----
+
 
 app.get('/random', (req, res)=>{
     console.log('requested random page')

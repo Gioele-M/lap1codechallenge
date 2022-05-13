@@ -59,11 +59,30 @@ async function getAllPokemon(){
     }
 }
 
+async function getByType(type){
+    try{
+        const response = await fetch(`http://localhost:3000/pokemon/type/${type}`)
+        const data = await response.json()
+
+        //If it does not return a message means data is there and can append to result page, otherwise make a card stating that this type does not exist
+        if(data.message == undefined){
+            data.forEach(e=> createSection(e))
+        }else{
+            createSection({preview : `No pokemon of type ${type} in the database`, img_url: '#', pokename: ''})
+        }
+
+    }catch(err){
+        console.log('Something went wrong ' + err.message)
+    }
+
+}
 
 let searchItem = localStorage.getItem('pokemon')
 
 if(searchItem === 'all'){
     getAllPokemon()
+}else{
+    getByType(searchItem)
 }
 
 

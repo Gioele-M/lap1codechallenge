@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
+
+    const allPokemonTypes = ["normal", "fire", "water", "grass", "electric", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dark", "dragon", "steel", "fairy"]
     
     const searchBar = document.querySelector('#searchbar')
     const searchBtn = document.querySelector('#search-btn')
@@ -21,8 +23,14 @@ window.addEventListener('DOMContentLoaded', () => {
             if(localStorage.getItem('pokemon')){
                 localStorage.clear()
             }
-            localStorage.setItem('pokemon', searchedValue)
-            window.open('./pokemon.html')
+            
+            if(allPokemonTypes.includes(searchedValue)){
+                localStorage.setItem('pokemon', searchedValue)
+                window.open('./results_page.html')
+            }else{
+                localStorage.setItem('pokemon', searchedValue)
+                window.open('./pokemon.html')
+            }
         }else{
 
         }

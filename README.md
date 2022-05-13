@@ -18,3 +18,6 @@ In order to use PokèSearch you will need to:
 
 ## Future improvements 
 - Testing suite
+
+
+

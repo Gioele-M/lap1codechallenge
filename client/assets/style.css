@@ -1,0 +1,133 @@
+ * {
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.leftLinks > a{
+    margin-left: 15px;
+}
+
+.leftLinks {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 0 5px;    
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+}
+
+.rightSide {
+    display: flex;
+}
+
+.rightLinks {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.images {
+    margin-right: 15px;
+}
+
+.images,
+.gmail {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 0 5px; 
+}
+
+.dot {
+    width: 24px;
+}
+
+.redIcon {
+    width: 40px;
+    padding: 4px;
+    margin-left: 15px;
+}
+
+.logoSection {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: inherit;
+}
+
+.searchIcon {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.micIcon {
+    width: 32px;
+    margin-right: 10px
+}
+
+.buttons {
+    width: 320px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.buttons2 {
+    width: 308px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 150px;
+    padding: 7px 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    text-align: center;
+}
+
+.searchSection {
+    background-color: #fff;
+    width: auto;
+    max-width: 584px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    margin: 0 auto;
+    border: 1px solid #dfe1e5;
+}
+
+#searchbar {
+    height: 34px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    word-wrap: break-word;
+    outline: none;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.barDiv {
+    flex-grow: 1;
+    margin: 0px 10px;
+}

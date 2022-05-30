@@ -1,0 +1,32 @@
+{
+  "name": "lap1codechallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./server/index.js",
+    "start": "node ./server/index.js",
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gioele-M/lap1codechallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gioele-M/lap1codechallenge/issues"
+  },
+  "homepage": "https://github.com/Gioele-M/lap1codechallenge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
+  }
+}

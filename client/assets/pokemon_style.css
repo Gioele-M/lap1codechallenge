@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #CE2211;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    grid-template-rows: auto auto auto;
+}
+
+.grid-container > div {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 30vw;
+}
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.pokeName,
+.pokeNum {
+    display: inline;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 2.5vh;
+}
+
+.pokeImg {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 25vw;
+    margin: 2.25vh auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.typeInfo,
+.abilityInfo,
+.evolutionInfo {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 25vw;
+    font-size: 2vh;
+    margin: 10px auto;
+    padding: 5px 0px;
+}
+
+.poke_card {
+    background-color: #fff;
+    margin: 2vh 1vh;
+    padding: 25px 0px;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+
+.attTitle {
+    font-size: 1.5vh;
+}
+
+.bioDiv,
+.previewDiv {
+    text-align: left;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 2vh;
+    align-items: stretch;
+    margin-left: 25px;
+    box-shadow: 10px 10px;
+}
+
+.bioDiv {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+h1 {
+    padding: 10px;
+    background-color: #FFCC00;
+    width: 450px;
+    margin: 1vh auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px;
+}
+
+.divTitle {
+    padding-bottom: 5px;
+    font-size: 2.5vh;
+}
